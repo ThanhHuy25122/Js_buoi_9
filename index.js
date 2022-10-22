@@ -78,7 +78,10 @@ function ex6() {
   var firstSwap = +document.getElementById("firstSwap").value;
   var secondSwap = +document.getElementById("secondSwap").value;
   var swap;
-  if ((firstSwap < 0 && firstSwap > x) || (secondSwap < 0 && secondSwap > x)) {
+  if (
+    (firstSwap >= 1 && firstSwap > x) ||
+    (secondSwap >= 1 && secondSwap > x)
+  ) {
     return alert("Nhập trong khoảng từ 1 -> " + x);
   } else if (firstSwap === secondSwap) {
     return alert(" Vị trí giống nhau ");
@@ -111,4 +114,31 @@ function ex7() {
     }
   }
   document.getElementById("ex7").innerHTML = "Mảng sau khi sắp xếp " + arr;
+}
+
+document.getElementById("arrEx8").innerHTML = "Mảng :" + arr;
+
+function ex8() {
+  var isFlag = false;
+
+  for (var i = 0; i < arr.length; i++) {
+    var count = 0;
+    if (arr[i] >= 2 && arr[i] % 1 == 0) {
+      for (var y = 1; y <= arr[i]; y++) {
+        if (arr[i] % y == 0) {
+          count++;
+        }
+      }
+    }
+    if (count == 2) {
+      isFlag = true;
+      return (document.getElementById("ex8").innerHTML =
+        " Số nguyên tố đầu tiên trong mảng :" + arr[i]);
+    }
+    console.log(arr[i]);
+  }
+  if (!isFlag) {
+    return (document.getElementById("ex8").innerHTML =
+      "Không có số nguyên tố trong mảng");
+  }
 }
