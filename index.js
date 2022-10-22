@@ -3,6 +3,7 @@ var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
 document.getElementById("arr").innerHTML = " Mảng : " + arr;
 
 function ex1() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var sum = 0;
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] >= 0) {
@@ -15,6 +16,7 @@ function ex1() {
 }
 
 function ex2() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var count = 0;
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] >= 0) {
@@ -27,6 +29,7 @@ function ex2() {
 }
 
 function ex3() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var min = arr[0];
   for (var i = 0; i < arr.length; i++) {
     if (min > arr[i]) {
@@ -39,6 +42,7 @@ function ex3() {
 }
 
 function ex4() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var min = arr[0];
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] >= 0) {
@@ -53,6 +57,7 @@ function ex4() {
 }
 
 function ex5() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   for (var i = arr.length - 1; i >= 0; i--) {
     var isFlag;
     if (arr[i] % 2 === 0 && arr[i] > 0) {
@@ -70,6 +75,7 @@ function ex5() {
 document.getElementById("arrEx6").innerHTML = "Mảng :" + arr;
 
 function ex6() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var x = 0;
   for (var i = arr.length - 1; i >= 0; i--) {
     x++;
@@ -95,6 +101,7 @@ function ex6() {
 document.getElementById("arrEx7").innerHTML = "Mảng :" + arr;
 
 function ex7() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var isSwapped = false;
   for (var k = arr.length - 1; k >= 0; k--) {
     for (var i = 0; i < k; i++) {
@@ -116,6 +123,7 @@ function ex7() {
 document.getElementById("arrEx8").innerHTML = "Mảng :" + arr;
 
 function ex8() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var isFlag = false;
 
   for (var i = 0; i < arr.length; i++) {
@@ -127,7 +135,7 @@ function ex8() {
         }
       }
     }
-    if (count == 2) {
+    if (count === 2) {
       isFlag = true;
       return (document.getElementById("ex8").innerHTML =
         " Số nguyên tố đầu tiên trong mảng :" + arr[i]);
@@ -143,6 +151,7 @@ function ex8() {
 document.getElementById("arrEx9").innerHTML = "Mảng :" + arr;
 
 function ex9() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var isFlag = false;
   var count = 0;
   for (var i = 0; i < arr.length; i++) {
@@ -163,6 +172,7 @@ function ex9() {
 document.getElementById("arrEx10").innerHTML = "Mảng :" + arr;
 
 function ex10() {
+  var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
   var count_a = 0;
   var count_d = 0;
 
