@@ -78,10 +78,7 @@ function ex6() {
   var firstSwap = +document.getElementById("firstSwap").value;
   var secondSwap = +document.getElementById("secondSwap").value;
   var swap;
-  if (
-    (firstSwap >= 1 && firstSwap > x) ||
-    (secondSwap >= 1 && secondSwap > x)
-  ) {
+  if (firstSwap < 1 || firstSwap > x || secondSwap < 1 || secondSwap > x) {
     return alert("Nhập trong khoảng từ 1 -> " + x);
   } else if (firstSwap === secondSwap) {
     return alert(" Vị trí giống nhau ");
