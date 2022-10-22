@@ -1,4 +1,4 @@
-var arr = [-3, 9, -123, 13, -3, 4.2, 5.5, 7, 3, 5, 7];
+var arr = [-3, 9, -123, 13, 0, -4.2, -5.5, -7, 3, 5, 7];
 
 document.getElementById("arr").innerHTML = " Mảng : " + arr;
 
@@ -139,6 +139,53 @@ function ex8() {
   }
   if (!isFlag) {
     return (document.getElementById("ex8").innerHTML =
-      "Không có số nguyên tố trong mảng");
+      "Không có số nguyên tố trong mảng" + -1);
+  }
+}
+
+document.getElementById("arrEx9").innerHTML = "Mảng :" + arr;
+
+function ex9() {
+  var isFlag = false;
+  var count = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 1 == 0) {
+      isFlag = true;
+      count++;
+    }
+  }
+  if (!isFlag) {
+    return (document.getElementById("ex9").innerHTML =
+      "Không có số nguyên trong mảng :" + -1);
+  } else {
+    return (document.getElementById("ex9").innerHTML =
+      "Số các số nguyên trong mảng : " + count);
+  }
+}
+
+document.getElementById("arrEx10").innerHTML = "Mảng :" + arr;
+
+function ex10() {
+  var count_a = 0;
+  var count_d = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      count_d++;
+    } else if (arr[i] < 0) {
+      count_a++;
+    } else {
+      continue;
+    }
+  }
+  if (count_d > count_a) {
+    return (document.getElementById("ex10").innerHTML =
+      "Trong mảng có số lượng số dương nhiều hơn số âm ");
+  } else if (count_d < count_a) {
+    return (document.getElementById("ex10").innerHTML =
+      "Trong mảng có số lượng số dương ít hơn số âm ");
+  } else {
+    return (document.getElementById("ex10").innerHTML =
+      "Trong mảng có số lượng số dương bằng số âm ");
   }
 }
