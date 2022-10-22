@@ -1,0 +1,13 @@
+label {
+  font-size: 25px;
+  font-weight: bold;
+}
+p {
+  font-size: 25px;
+}
+
+input[type="number"] {
+  display: block;
+  line-height: 19px;
+  margin: 15px 0;
+}
